@@ -13,6 +13,15 @@ module.exports = {
       backgroundImage: {
         'hero': "url('../public/assets/images/hero-section.png')",
       },
+      keyframes: {
+        'scroll-vertical': {
+          '0%': { transform: 'translateY(0%)' },
+          '100%': { transform: 'translateY(-50%)' }, // adjust based on content height
+        },
+      },
+      animation: {
+        'scroll-vertical': 'scroll-vertical 10s linear infinite',
+      },
     },
   },
   plugins: [
