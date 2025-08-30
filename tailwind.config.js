@@ -8,6 +8,7 @@ module.exports = {
         inter_bold: ["Inter-Bold", "sans-serif"],
         merriweather_regular: ["Merriweather-Regular", "sans-serif"],
         merriweather_bold: ["Merriweather-Bold", "sans-serif"],
+        amoresa: ["Amoresa", "sans-serif"],
       },
       backgroundImage: {
         'hero': "url('../public/assets/images/hero-section.png')",

@@ -52,3 +52,10 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Amoresa';
+  src: url('../public/fonts/amoresa.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

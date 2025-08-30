@@ -1,5 +1,6 @@
 import './App.css';
-import HeroSection from './components/sections/hero-section';
+import HeroSection from './components/sections/hero';
+import BehindTheLensSection from './components/sections/behind-the-lens';
 
 function App() {
   return (
@@ -9,6 +10,11 @@ function App() {
       {/* LANDING PAGE SECTION */}
       <section id="home">
         <HeroSection />
+      </section>
+
+      {/* EDUCATIONAL BACKGROUND SECTION */}
+      <section id="behind-the-lens">
+        <BehindTheLensSection />
       </section>
     </div>
   );
