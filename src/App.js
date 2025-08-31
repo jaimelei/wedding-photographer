@@ -2,6 +2,7 @@ import './App.css';
 import HeroSection from './components/sections/hero';
 import BehindTheLensSection from './components/sections/behind-the-lens';
 import WhatIOfferSection from './components/sections/what-i-offer';
+import FeaturedWorksSection from './components/sections/featured-works';
 
 function App() {
   return (
@@ -21,6 +22,11 @@ function App() {
       {/* BEHIND THE LENS SECTION */}
       <section id="what-i-offer">
         <WhatIOfferSection />
+      </section>
+
+      {/* FEATURED WORKS SECTION */}
+      <section id="featured-works">
+        <FeaturedWorksSection />
       </section>
     </div>
   );  

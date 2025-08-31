@@ -22,6 +22,15 @@ body {
   scrollbar-width: none;
 }
 
+body.modal-open,
+html.modal-open,
+#root.modal-open {
+  overflow: hidden !important;
+  height: 100%;
+}
+
+
+
 /*////////////////
 // Font Section //
 ////////////////*/
