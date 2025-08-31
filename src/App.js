@@ -4,6 +4,7 @@ import BehindTheLensSection from './components/sections/behind-the-lens';
 import WhatIOfferSection from './components/sections/what-i-offer';
 import FeaturedWorksSection from './components/sections/featured-works';
 import MetricsSection from './components/sections/metrics';
+import TestimonialsSection from './components/sections/testimonials';
 
 function App() {
   return (
@@ -28,6 +29,10 @@ function App() {
 
       <section id="metrics">
         <MetricsSection />
+      </section>
+
+      <section id="testimonials">
+        <TestimonialsSection />
       </section>
     </div>
   );  
