@@ -1,4 +1,11 @@
-export default function MetricsSection() {
+import { useState } from 'react';
+import WriteTestimonialModal from '../modals/write-testimonial';
+import SeeAllTestimonialsModal from '../modals/see-all-testimonials';
+
+export default function TestimonialsSection() {
+  const [showWriteModal, setShowWriteModal] = useState(false);
+  const [showAllModal, setShowAllModal] = useState(false);
+
   return (
     <div className="flex h-auto bg-white">
       <div className="w-[60%] mx-auto py-20 flex flex-col justify-center items-center">
@@ -35,10 +42,16 @@ export default function MetricsSection() {
 
         {/* Buttons */}
         <div className="flex justify-between w-full mt-4">
-          <button className="text-lg font-inter hover:underline">
+          <button
+            className="text-lg font-inter hover:underline"
+            onClick={() => setShowAllModal(true)}
+          >
             📖 See all reviews here.
           </button>
-          <button className="text-lg font-inter hover:underline">
+          <button
+            className="text-lg font-inter hover:underline"
+            onClick={() => setShowWriteModal(true)}
+          >
             ✍️ Write your review here.
           </button>
         </div>
@@ -51,6 +64,14 @@ export default function MetricsSection() {
           controls
           className="w-[80%] rounded-lg shadow-md"
         />
+
+        {/* Modals */}
+        {showWriteModal && (
+          <WriteTestimonialModal onClose={() => setShowWriteModal(false)} />
+        )}
+        {showAllModal && (
+          <SeeAllTestimonialsModal onClose={() => setShowAllModal(false)} />
+        )}
       </div>
     </div>
   );
