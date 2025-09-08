@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+📸 Lee Sumin Photography – Wedding Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A fully responsive and editorial-style portfolio site for wedding photographer Lee Sumin, showcasing her services, featured works, client testimonials, and more. Built for modern elegance, storytelling, and seamless browsing across devices.
 
-## Available Scripts
+🔍 Overview
 
-In the project directory, you can run:
+This website is designed to highlight the artistry and professionalism of a wedding photographer through clean layouts, interactive components, and carefully curated content. The layout is tailored for storytelling, with support for images, video reels, and responsive interactions that work across all screen sizes.
 
-### `npm start`
+🚀 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Elegant landing section with hero image
+Captures attention with a striking visual and signature quote, fully responsive with manually controlled image positioning across breakpoints.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Responsive service breakdown
+The "What I Offer" section blends icons, text, and an auto-scrolling image carousel, adapting vertically or horizontally based on screen size.
 
-### `npm test`
+Featured Works modal gallery
+Highlighted client weddings displayed through interactive cards with smooth scaling and an expandable modal layout per set.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Real-time testimonials
+Modular testimonial cards with modal support for both viewing all reviews and submitting new ones.
 
-### `npm run build`
+Backend-integrated review system
+Testimonials are stored in PostgreSQL via a Go backend, dynamically rendered on the frontend.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Polished footer with branding & social icons
+Includes contact details, quick navigation, social links, and developer credits.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🔗 Preview
+Live app available at: [https://jli-weddingphotographer.vercel.app](https://jli-weddingphotographer.vercel.app)
