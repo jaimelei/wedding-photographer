@@ -73,7 +73,7 @@ export default function FeaturedWorksSection() {
                   <img
                     src={img}
                     alt={title}
-                    className="rounded-lg w-full h-[250px] sm:h-[300px] md:h-[200px] object-cover object-center mb-4"
+                    className="rounded-lg w-full h-[250px] sm:h-[300px] md:h-[200px] lg:h-[400px] object-cover object-center mb-4"
                   />
                   <h1 className="text-xl font-bold text-center sm:text-2xl font-merriweather_bold">{title}</h1>
                   <h2 className="mt-1 text-sm text-center sm:text-lg font-inter">{subtitle}</h2>
