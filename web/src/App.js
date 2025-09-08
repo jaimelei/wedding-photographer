@@ -13,7 +13,7 @@ function App() {
 <div className="relative">
   <Navbar />
 
-  <main className="pt-20">
+  <main className="pt-16">
     <section id="home">
       <HeroSection />
     </section>

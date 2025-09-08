@@ -30,28 +30,35 @@ export default function FeaturedWorksSection() {
   };
 
   return (
-    <div className="bg-white h-auto flex">
-      <div className="w-[60%] mx-auto py-20 flex flex-col justify-center items-center">
-        <h1 className="text-5xl font-merriweather_bold mb-12">Featured Works</h1>
-        
-        <div className="w-full flex justify-center items-center gap-8">
+    <div className="flex h-auto bg-white">
+      <div className="w-[90%] sm:w-[85%] md:w-[80%] lg:w-[70%] xl:w-[60%] mx-auto py-10 sm:py-12 xl:py-20 flex flex-col justify-center items-center">
+        <h1 className="mb-12 text-3xl text-center sm:text-4xl md:text-5xl font-merriweather_bold">Featured Works</h1>
+
+        <div className="flex flex-col items-center justify-center w-full gap-8 md:flex-row">
           {[1, 2, 3].map((id) => {
-            const isHovered = hoveredId === id;
-            const isAnotherHovered = hoveredId !== null && !isHovered;
             const { img, title, subtitle } = cardContent[id];
 
+            // Behavior for md and up
+            const isHovered = hoveredId === id;
+            const isAnotherHovered = hoveredId !== null && !isHovered;
+            const mdScale =
+              isHovered
+                ? 'md:scale-110 md:z-10'
+                : isAnotherHovered
+                ? 'md:scale-90 md:opacity-80'
+                : activeId === id
+                ? 'md:scale-110 md:z-10'
+                : 'md:scale-95';
+
             return (
-                <div
+              <div
                 key={id}
                 onClick={() => handleCardClick(id)}
                 onMouseEnter={() => setHoveredId(id)}
                 onMouseLeave={() => setHoveredId(null)}
-                className={`
-                    flex-1 min-w-0 rounded-xl cursor-pointer transition-all duration-300 overflow-hidden
-                    ${isHovered ? 'scale-110 z-10' : isAnotherHovered ? 'scale-90 opacity-80' : (activeId === id ? 'scale-110 z-10' : 'scale-95')}
-                `}
+                className={`w-full md:flex-1 min-w-0 rounded-xl cursor-pointer transition-all duration-300 overflow-hidden ${mdScale}`}
                 style={{
-                    background: `linear-gradient(180deg, 
+                  background: `linear-gradient(180deg, 
                     #f9eaea 0%, 
                     #c8adad 16%, 
                     #bb9797 32%, 
@@ -61,17 +68,17 @@ export default function FeaturedWorksSection() {
                     #ffffff 90%, 
                     #ffffff 100%)`,
                 }}
-                >
-                <div className="w-full flex border-2 border-black flex-col items-center justify-start p-8 text-black">
-                    <img
+              >
+                <div className="flex flex-col items-center justify-start w-full p-6 text-black border-2 border-black sm:p-8">
+                  <img
                     src={img}
                     alt={title}
-                    className="rounded-lg w-full h-[400px] object-cover object-center mb-4"
-                    />
-                    <h1 className="text-2xl font-bold font-merriweather_bold text-center">{title}</h1>
-                    <h2 className="text-lg font-inter text-center mt-1">{subtitle}</h2>
+                    className="rounded-lg w-full h-[250px] sm:h-[300px] md:h-[200px] object-cover object-center mb-4"
+                  />
+                  <h1 className="text-xl font-bold text-center sm:text-2xl font-merriweather_bold">{title}</h1>
+                  <h2 className="mt-1 text-sm text-center sm:text-lg font-inter">{subtitle}</h2>
                 </div>
-                </div>
+              </div>
             );
           })}
         </div>
@@ -79,11 +86,11 @@ export default function FeaturedWorksSection() {
 
       {isModalOpen && (
         <FeaturedWorksModal
-            id={activeId}
-            onClose={() => {
+          id={activeId}
+          onClose={() => {
             setIsModalOpen(false);
             setActiveId(2);
-            }}
+          }}
         />
       )}
     </div>

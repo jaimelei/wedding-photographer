@@ -26,7 +26,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Nav */}
-        <nav className="hidden space-x-6 text-sm text-gray-700 md:flex font-inter_bold">
+        <nav className="hidden space-x-6 text-sm text-gray-700 lg:flex font-inter_bold">
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -39,7 +39,7 @@ export default function Navbar() {
         </nav>
 
         {/* Hamburger Icon */}
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <button onClick={toggleDropdown} className="focus:outline-none">
             <svg
               className="w-6 h-6 text-gray-700"
