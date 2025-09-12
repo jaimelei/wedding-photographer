@@ -69,7 +69,7 @@ export default function ContactSection() {
         <div className="space-y-1 text-center">
           <p className="text-sm sm:text-md font-inter">
             Website by <strong>J.L.I.</strong> Want one like this?{' '}
-            <a href="https://jaimeleiindick.vercel.app" target="_blank" rel="noopener noreferrer" className="underline">
+            <a href="https://www.tiktok.com/@jli.webdeveloper" target="_blank" rel="noopener noreferrer" className="underline">
               Just click here.
             </a>
           </p>
